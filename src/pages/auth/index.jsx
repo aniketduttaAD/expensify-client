@@ -63,7 +63,7 @@ export default function Authentication() {
         if (action === "login") {
           try {
             const response = await axios.post(
-              `https:/expensify-dev-server-production.up.railway.app/login`,
+              `https://expensify-dev-server-production.up.railway.app/login`,
               {
                 userId: data.name,
                 password: data.password,
@@ -101,7 +101,7 @@ export default function Authentication() {
         // Perform create account operation
         else if (action === "createaccount") {
           const createAccountResponse = await axios.post(
-            `https:/expensify-dev-server-production.up.railway.app/newUser`,
+            `https://expensify-dev-server-production.up.railway.app/newUser`,
             {
               name: data.name,
               password: data.password,
